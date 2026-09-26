@@ -1,0 +1,139 @@
+:root {
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  --main-purple: #94349F;
+  --light-purple:  #F15EB8;
+  --dark-purple: #4D1456;
+  --washed-purple: #E1ACF5;
+  --light-yellow: #F5E663;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  background-image: url(./assets/pexels-mrish_marina_alekseevna-20195869-6833126.jpg);
+}
+
+/* This File Contains Globally Used Styles */
+
+#outer-container {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#middle-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#content-container-desktop {
+  display: flex;
+
+  height: fit-content;
+  width: 95%;
+
+  background: rgba(43, 43, 43, 0.92);
+
+  border: solid 2px rgba(213, 213, 213, 0.8);
+  border-radius: 15px;
+  overflow: hidden;
+
+  margin: auto;
+}
+
+#content-container-mobile {
+  height: fit-content;
+  width: 95%;
+
+  background: rgba(43, 43, 43, 0.92);
+
+  border: solid 2px rgba(213, 213, 213, 0.8);
+  border-radius: 15px;
+  overflow: hidden;
+
+  margin: auto;
+}
+
+/* Navbar Global */
+#logo-card {
+  width: 90%;
+  height: fit-content;
+  padding: 0.5rem;
+
+  background-color: black;
+  border-radius: 12px;
+}
+
+#logo-img {
+  border-radius: 8px;
+  border: solid 2px var(--washed-purple);
+}
+
+#logo-title {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  color: var(--main-purple);
+  filter: drop-shadow(1.5px 1.5px var(--washed-purple));
+  font-weight: bold;
+}
+
+/* Desktop Navbar */
+#navbar-desktop {
+  width: 20%;
+  height: 100%;
+
+  background-color: rgba(35, 35, 35, 0.92);
+
+  padding: 1rem;
+}
+
+#desktop-nav-container {
+  height: fit-content;
+  width: 90%;
+
+  border-radius: 12px;
+  overflow: hidden;
+} 
+
+.desktop-nav-btn {
+  display: block;
+
+  width: 100%;
+  height: fit-content;
+
+  font-weight: bold;
+  font-style: italic;
+  font-size: large;
+
+  background-color: black;
+
+  color: var(--washed-purple);
+}
+
+.desktop-nav-btn:hover {
+  background-color: var(--washed-purple);
+  color: black;
+  font-size: large;
+
+  cursor: pointer;
+}
+
+/* Mobile Navbar */
+#navbar-mobile {
+  
+}
