@@ -110,7 +110,6 @@ body {
 /* Desktop Navbar */
 #navbar-desktop {
   width: 20%;
-  height: 100%;
 
   background-color: rgba(35, 35, 35, 0.92);
 
@@ -140,6 +139,31 @@ body {
   color: var(--washed-purple);
 }
 
+.player-nav-desktop {
+  padding-left: 15%;
+
+  display: block;
+
+  width: 100%;
+  height: fit-content;
+
+  font-weight: bold;
+  font-style: italic;
+  font-size: large;
+
+  background-color: black;
+
+  color: var(--light-yellow);
+}
+
+.player-nav-desktop:hover {
+  background-color: var(--light-yellow);
+  color: black;
+  font-size: large;
+
+  cursor: pointer;
+}
+
 .desktop-nav-btn:hover {
   background-color: var(--washed-purple);
   color: black;
@@ -150,7 +174,7 @@ body {
 
 /* Mobile Navbar */
 #navbar-mobile {
-  width: 95%;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -159,8 +183,29 @@ body {
   display: flex;
   overflow-x: scroll;
   width: 100%;
+
+  border-radius: 12px;
 }
 
-#mobile-nav-btn {
-  
+.mobile-nav-btn {
+  width: fit-content;
+  padding: 0.4rem;
+
+  font-weight: bold;
+  font-style: italic;
+  font-size: large;
+
+  background-color: black;
+
+  color: var(--washed-purple);
+
+  white-space: nowrap;
+}
+
+.mobile-nav-btn:hover {
+  background-color: var(--washed-purple);
+  color: black;
+  font-size: large;
+
+  cursor: pointer;
 }
