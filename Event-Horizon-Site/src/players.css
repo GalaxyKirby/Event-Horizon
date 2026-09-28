@@ -1,0 +1,26 @@
+.player-title {
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.player-card-info {
+    background-color: var(--dark-purple);
+}
+
+.player-pfp {
+    width: clamp(90px, 15%, 135px);
+    height: auto;
+
+    border-radius: 20px;
+
+    border: solid 2px var(--washed-purple);
+
+    margin: 0.7rem;
+}
+
+.weapon-photo {
+    width: clamp(50px, 5vw, 60px);
+    height: auto;
+
+    margin: 0.7rem;
+}

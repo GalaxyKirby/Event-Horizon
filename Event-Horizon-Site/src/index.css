@@ -70,7 +70,7 @@ body {
 
 /* Navbar Global */
 .logo-card {
-  width: 90%;
+  width: fit-content;
   height: fit-content;
   padding: 0.5rem;
 
@@ -118,7 +118,7 @@ body {
 
 #desktop-nav-container {
   height: fit-content;
-  width: 90%;
+  width: 95%;
 
   border-radius: 12px;
   overflow: hidden;
@@ -208,4 +208,18 @@ body {
   font-size: large;
 
   cursor: pointer;
+}
+
+/* Index Assets */
+
+#main-page-img {
+  display: block;
+  width: clamp(350px, 40%, 600px);
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+
+  border-radius: 12px;
 }

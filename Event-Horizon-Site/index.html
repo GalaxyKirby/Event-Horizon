@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="./src/global.css" />
     <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/players.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Event Horizon</title>
@@ -20,10 +22,21 @@
             </div>
             <br />
             <div id="desktop-nav-container">
-              <btn class="desktop-nav-btn">➲ Home</btn>
-              <btn class="desktop-nav-btn">➲ Players</btn>
-              <btn class="desktop-nav-btn">➲ History</btn>
-              <btn class="desktop-nav-btn">➲ Socials</btn>
+              <btn id="home-btn" class="desktop-nav-btn">➲ Home</btn>
+              <div id="players-desktop-nav">
+                <btn id="players-btn" class="desktop-nav-btn">➲ Players</btn>
+                <div id="players-desktop-list">
+                  <btn id="galaxy-btn"class="player-nav-desktop">Galaxy</btn>
+                  <btn id="waffle-btn" class="player-nav-desktop">Waffle</btn>
+                  <btn id="duck-btn" class="player-nav-desktop">Duck</btn>
+                  <btn id="din0-btn" class="player-nav-desktop">Din0</btn>
+                  <btn id="sniper-btn" class="player-nav-desktop">Sniper</btn>
+                  <btn class="player-nav-desktop"></btn>
+                </div>
+              </div>
+              <btn id="lore-btn" class="desktop-nav-btn">➲ Lore</btn>
+              <btn id="bluesky-btn" class="desktop-nav-btn">➲ Bluesky</btn>
+              <btn id="twitch-btn" class="desktop-nav-btn">➲ Twitch</btn>
             </div>
           </div>
           <!-- Mobile Navbar -->
@@ -34,15 +47,16 @@
             </div>
             <div id="mobile-nav-container">
               <btn class="mobile-nav-btn">➲ Home</btn>
-              <btn class="mobile-nav-btn">➲ Team</btn>
-              <btn class="mobile-nav-btn">➲ History</btn>
-              <btn class="mobile-nav-btn">➲ Socials</btn>
+              <btn class="mobile-nav-btn">➲ Players</btn>
+              <btn class="mobile-nav-btn">➲ Lore</btn>
+              <btn class="mobile-nav-btn">➲ Bluesky</btn>
+              <btn class="mobile-nav-btn">➲ Twitch</btn>
             </div>
           </div>
 
           <!-- About -->
           <div id="about-section">
-            <img class="main-page-img" src="./src/assets/Event_Horizon_Banner.png" style="display: none;"/>
+            <img id="main-page-img" src="./src/assets/Event_Horizon_Banner.png" />
             <div class="text-container">
               <h5 class="title">Welcome To The Event Horizon</h5>
               <br />
@@ -54,47 +68,96 @@
                   <br />
                   <br />
                   Our gamplay is specialized in coordination, picking a lot of weapons with supernova sized hitboxes 
-                  that combo with each other and deny space.
+                  that combo with each other and deny space. Win or lose, we take every set as a learning experience and have a current goal of someday pushing into high level play.
               </p>
             </div>
-
-            <!-- Players -->
-            <div id="players-section">
-              <!-- Galaxy -->
-              <div class="galaxy-player">
-                <div class="player-card">
-                  <img class="player-pfp" src="" />
-                  <div class="player-card-info">
-                    <h5 class="title">GalaxyKirby</h5>
-                    <p class="content">Captain</p>
-                  </div>
-                  <h5 class="title">About</h5>
-                  <p class="content">
-
-                  </p>
+          </div>
+          <!-- Players -->
+          <div id="players-section">
+            <!-- Galaxy -->
+            <div id="galaxy-player">
+              <div class="player-card">
+                <div class="player-card-info">
+                <img class="player-pfp" src="./src/assets/Chai_PFP.png" />
+                  <h3 class="title">GalaxyKirby</h5>
+                  <img class="weapon-photo" src="./src/assets/S3_Badge_S-BLAST_91_7.png"/>
+                  <p class="content" style="margin: 0; font-weight: bold;">He/She</p>
+                  <p class="content" style="font-weight: bold;">Captain</p>
                 </div>
+                <h5 class="title">About</h5>
+                <p class="content">
+                  "The best way I can describe Blaster mains is if you hand a gorilla a Pro Controller and say 'If you win at Splatoon, I will give you a banana'. The gorilla does not care about being seen as talented or any sort of glory, the gorilla just wants to win at Splatoon"
+                  <br />
+                  <br />
+                  A longtime Smash player turned into a Splatoon person. One of the few remaining S-Blast players that hasn't converted to the Sensor + Splashdown cult. 
+                  Resident furry software developer (I made this site! :3) that loves rambling about video games.  
+                </p>
               </div>
-              <br />
-              <!-- Waffle -->
-              <div class="waffle-player">
-                  <div class="player-card">
-                  <img class="player-pfp" src="" />
-                  <div class="player-card-info">
-                    <h5 class="title">GalaxyKirby</h5>
-                    <p class="content">Captain</p>
-                  </div>
-                  <h5 class="title">About</h5>
-                  <p class="content">
-                    
-                  </p>
-                </div>
-              </div>
-              <!-- Duck -->
-
-              <!-- Din0 -->
-
-              <!-- Sniper -->
             </div>
+            <!-- Waffle -->
+            <div id="waffle-player">
+                <div class="player-card">
+                <div class="player-card-info">
+                <img class="player-pfp" src="./src/assets/Waffle_PFP.png" />
+                  <h3 class="title">Waffle</h5>
+                  <img class="weapon-photo" src="./src/assets/S3_Badge_Mint_Decavitator_7.png"/>
+                  <p class="content" style="margin: 0; font-weight: bold;">She/Her</p>
+                  <p class="content" style="font-weight: bold;">Co-Captain</p>
+                </div>
+                <h5 class="title">About</h5>
+                <p class="content">
+                  "decavitator is a portmanteau of decapitate and cavity"
+                  <br />
+                  <br />
+                  Resident sword one-trick (except for when I pick dynamo and sometimes recycle). 
+                  Been playing splatoon since the first game and competitive since 2023. Currently a student and wishes to go to more LANS but cannot due to aforementioned studentry.
+              </div>
+            </div>
+            <!-- Duck -->
+            <div id="duck-player">
+              <div class="player-card">
+                <img class="player-pfp" src="" />
+                  <h5 class="title">Duck</h5>
+                  <p class="content">Support? Slayer? Flip a coin</p>
+                  <img class="weapon-main" src="./src/assets/Duck_PFP.png" />
+                </div>
+                <h5 class="title">About</h5>
+                <p class="content">
+                  *Insert description later*
+                </p>
+              </div>
+            </div>
+            <!-- Din0 -->
+            <div id="din0-player">
+                <div class="player-card">
+                <img class="player-pfp" src="./src/assets/Dino_PFP.png" />
+                <div class="player-card-info">
+                  <h5 class="title">Din0</h5>
+                  <p class="content"></p>
+                </div>
+                <h5 class="title">About</h5>
+                <p class="content">
+                  Explosher extrodiner and homosexual disaster. 
+                  I love cats let me show you my cats pretty please. 
+                  I like Splatoon (cause I'm gay) I've been here since 2020 and I'm still not LI banned (yet). Also I commentate and make art.
+                </p>
+              </div>
+            </div>
+            <!-- Sniper -->
+            <div id="sniper-player">
+                <div class="player-card">
+                <img class="player-pfp" src="./src/assets/Sniper_PFP.png" />
+                <div class="player-card-info">
+                  <h5 class="title">Sniper</h5>
+                  <p class="content"></p>
+                </div>
+                <h5 class="title">About</h5>
+                <p class="content">
+                  *Insert description later*
+                </p>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
