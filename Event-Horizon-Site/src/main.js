@@ -42,6 +42,13 @@ duckBtn.addEventListener('click', () => {
     showPage("duck");
 });
 
+dinoBtn.addEventListener('click', () => {
+    showPage("dino");
+});
+
+sniperBtn.addEventListener('click', () => {
+    showPage("sniper");
+});
 
 
 //Btn Nav Mobile
