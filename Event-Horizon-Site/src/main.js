@@ -1,5 +1,5 @@
 import "./utils";
-import { NAV_STATE, showPage } from "./utils";
+import { NAV_STATE, positionDropdown, showPage } from "./utils";
 
 //Buttons
 const homeBtn = document.getElementById('home-btn');
@@ -7,7 +7,11 @@ const galaxyBtn = document.getElementById('galaxy-btn');
 const waffleBtn = document.getElementById('waffle-btn');
 const duckBtn = document.getElementById('duck-btn');
 const dinoBtn = document.getElementById('din0-btn');
-const sniperBtn = document.getElementById('sniper-btn')
+const sniperBtn = document.getElementById('sniper-btn');
+
+const loreBtn = document.getElementById('lore-btn');
+const blueskyBtn = document.getElementById('bluesky-btn');
+const twitchBtn = document.getElementById('bluesky-btn');
 //Mobile Btns
 const homeBtnMbl = document.getElementById('home-btn-mbl');
 const galaxyBtnMbl = document.getElementById('galaxy-btn-mbl');
@@ -17,7 +21,7 @@ const dinoBtnMbl = document.getElementById('dino-btn-mbl');
 const sniperBtnMbl = document.getElementById('sniper-btn-mbl');
 
 const dropdownBtn = document.getElementById('dropdown-btn');
-const dropdown = document.getElementById('dropdown');
+const dropdown = document.getElementById('mobile-nav-players');
 
 //On Page Open Set State
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,9 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //= Dropdown
+
 dropdownBtn.addEventListener('click', () => {
     dropdown.style.display == "none" 
-        ? dropdown.style.display = "block"
+        ? dropdown.style.display = "flex"
         : dropdown.style.display = "none";
 });
 
@@ -39,6 +44,7 @@ document.addEventListener('click', () => {
         dropdown.style.display = "none";
     }
 })
+
 
 //= Buttons
 //Btn Nav Desktop
@@ -65,6 +71,16 @@ dinoBtn.addEventListener('click', () => {
 sniperBtn.addEventListener('click', () => {
     showPage("sniper");
 });
+
+loreBtn.addEventListener('click', () => {
+    window.open("https://www.britannica.com/topic/event-horizon-black-hole");
+});
+
+blueskyBtn.addEventListener('click', () => {
+    window.open('https://bsky.app/profile/eventthorizon.bsky.social');
+});
+
+
 
 //Btn Nav Mobile
 homeBtnMbl.addEventListener('click', () => {

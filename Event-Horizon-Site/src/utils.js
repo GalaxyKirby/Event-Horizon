@@ -36,3 +36,11 @@ export function showPage(name) {
     localStorage.setItem(NAV_STATE, name);
 }
 
+export function positionDropdown(button, dropdown) {
+    const position = button.getBoundingClientRect();
+
+    dropdown.style.position = "fixed";
+    dropdown.style.left = `${position.left}px`;
+    dropdown.style.top = `${position.bottom}px`;
+}
+
