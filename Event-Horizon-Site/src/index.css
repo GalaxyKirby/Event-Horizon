@@ -16,9 +16,8 @@
 
 body {
   background-position: center;
-  background-size: cover;
+  background-size: 170%;
 
-  background-repeat: no-repeat;
   height: 100vh;
 
   background-image: url(./assets/pexels-mrish_marina_alekseevna-20195869-6833126.jpg);
@@ -27,6 +26,9 @@ body {
 /* This File Contains Globally Used Styles */
 
 #outer-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
   display: table;
   position: absolute;
   top: 0;
@@ -40,24 +42,12 @@ body {
   vertical-align: middle;
 }
 
-#content-container-desktop {
+#content-container {
   display: flex;
 
   height: fit-content;
-  width: 95%;
-
-  background: rgba(43, 43, 43, 0.92);
-
-  border: solid 2px rgba(213, 213, 213, 0.8);
-  border-radius: 15px;
-  overflow: hidden;
-
-  margin: auto;
-}
-
-#content-container-mobile {
-  height: fit-content;
-  width: 95%;
+  width: 90%;
+  max-width: 90%;
 
   background: rgba(43, 43, 43, 0.92);
 
@@ -105,6 +95,13 @@ body {
   color: var(--main-purple);
   filter: drop-shadow(1.5px 1.5px var(--washed-purple));
   font-weight: bold;
+}
+
+.page-content {
+  width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Desktop Navbar */
@@ -174,36 +171,102 @@ body {
 
 /* Mobile Navbar */
 #navbar-mobile {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+    display: none;
 }
 
 #mobile-nav-container {
-  display: flex;
-  overflow-x: scroll;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
 
-  border-radius: 12px;
+    flex-wrap: nowrap;
+
+    width: 95%;
+    max-width: 95%;
+    min-width: 0;
+
+    margin: 0 auto;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    box-sizing: border-box;
+
+    scrollbar-color: var(--light-yellow) black;
+    scrollbar-width: thin;
 }
 
 .mobile-nav-btn {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    flex: 0 0 auto;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 0.4rem;
+
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+
+    background-color: black;
+    color: var(--washed-purple);
+
+    white-space: nowrap;
+
+    border-radius: 10px;
+}
+
+.mobile-nav-btn:hover {
+  background-color: var(--washed-purple);
+  color: black;
+  font-size: large;
+
+  cursor: pointer;
+}
+
+#dropdown {
+  display: none;
+
+  position: absolute;
+
   width: fit-content;
+  padding: 0.5rem;
+
+  background-color: black;
+
+  border-radius: 8px;
+}
+
+.player-nav-mobile {
+
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 95%;
+
   padding: 0.4rem;
 
+  text-align: center;
   font-weight: bold;
   font-style: italic;
   font-size: large;
 
   background-color: black;
 
-  color: var(--washed-purple);
+  color: var(--light-yellow);
+
+  border-radius: 10px;
 
   white-space: nowrap;
 }
 
-.mobile-nav-btn:hover {
-  background-color: var(--washed-purple);
+.player-nav-mobile:hover {
+  background-color: var(--light-yellow);
   color: black;
   font-size: large;
 
@@ -222,4 +285,84 @@ body {
   margin-top: 1rem;
 
   border-radius: 12px;
+}
+
+@media only screen and (max-width: 768px) { 
+
+  /* 
+    Constraining the width of all containers while fixed to mobile screen size 
+    Previous implementations clipped if the screen were too thin
+  */
+  html,
+  body {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+  }
+
+  #outer-container {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+  }
+
+  #middle-container {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+  }
+
+  #content-container {
+      display: block;
+      width: 95%;
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+
+  #navbar-desktop {
+      display: none;
+  }
+
+  #navbar-mobile {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+
+  #mobile-nav-container {
+      display: flex;
+      width: 95%;
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      flex-wrap: nowrap;
+  }
+
+  .mobile-nav-btn,
+  .player-nav-mobile {
+      flex: 0 0 auto;
+      white-space: nowrap;
+  }
+
+  .player-card-info {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    border-radius: 15px;
+    border: 2px solid var(--light-purple);
+  }
 }
