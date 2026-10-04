@@ -1,5 +1,19 @@
-import "./utils";
-import { NAV_STATE, positionDropdown, showPage } from "./utils";
+//Vars
+const NAV_STATE = "State";
+
+//Pages
+const pages = {
+    home: document.getElementById("about-section"),
+    galaxy: document.getElementById("galaxy-player"),
+    waffle: document.getElementById("waffle-player"),
+    duck: document.getElementById("duck-player"),
+    dino: document.getElementById("din0-player"),
+    sniper: document.getElementById("sniper-player")
+};
+
+//Nav Bars
+let desktopNav = document.getElementById('navbar-desktop');
+let mobileNav = document.getElementById('navbar-mobile');
 
 //Buttons
 const homeBtn = document.getElementById('home-btn');
@@ -27,6 +41,33 @@ const twitchBtnMbl = document.getElementById('twitch-btn-mbl');
 
 const dropdownBtn = document.getElementById('dropdown-btn');
 const dropdown = document.getElementById('mobile-nav-players');
+
+//Functions
+function showPage(name) {
+
+    // Hide every page
+    Object.values(pages).forEach(page => {
+        page.style.display = "none";
+    });
+
+    if (!pages[name]) {
+        name = "home";
+    }
+
+    //Show the given page
+    pages[name].style.display = "block";
+
+    
+    localStorage.setItem(NAV_STATE, name);
+}
+
+function positionDropdown(button, dropdown) {
+    const position = button.getBoundingClientRect();
+
+    dropdown.style.position = "fixed";
+    dropdown.style.left = `${position.left}px`;
+    dropdown.style.top = `${position.bottom}px`;
+}
 
 //On Page Open Set State
 document.addEventListener('DOMContentLoaded', () => {
