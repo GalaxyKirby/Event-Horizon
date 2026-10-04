@@ -1,14 +1,18 @@
 {
-  "name": "event-horizon-site",
+  "name": "Event-Horizon",
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://GalaxyKirby.github.io/Event-Horizon/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^8.3.0"
   }
 }

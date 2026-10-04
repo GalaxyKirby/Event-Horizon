@@ -12,6 +12,7 @@ const sniperBtn = document.getElementById('sniper-btn');
 const loreBtn = document.getElementById('lore-btn');
 const blueskyBtn = document.getElementById('bluesky-btn');
 const twitchBtn = document.getElementById('bluesky-btn');
+
 //Mobile Btns
 const homeBtnMbl = document.getElementById('home-btn-mbl');
 const galaxyBtnMbl = document.getElementById('galaxy-btn-mbl');
@@ -19,6 +20,10 @@ const waffleBtnMbl = document.getElementById('waffle-btn-mbl');
 const duckBtnMbl = document.getElementById('duck-btn-mbl');
 const dinoBtnMbl = document.getElementById('dino-btn-mbl');
 const sniperBtnMbl = document.getElementById('sniper-btn-mbl');
+
+const loreBtnMbl = document.getElementById('lore-btn-mbl');
+const blueskyBtnMbl = document.getElementById('bluesky-btn-mbl');
+const twitchBtnMbl = document.getElementById('twitch-btn-mbl');
 
 const dropdownBtn = document.getElementById('dropdown-btn');
 const dropdown = document.getElementById('mobile-nav-players');
@@ -80,7 +85,9 @@ blueskyBtn.addEventListener('click', () => {
     window.open('https://bsky.app/profile/eventthorizon.bsky.social');
 });
 
-
+twitchBtn.addEventListener('click', () => {
+    window.open('https://www.twitch.tv/galaxykirbyspl');
+});
 
 //Btn Nav Mobile
 homeBtnMbl.addEventListener('click', () => {
@@ -105,4 +112,16 @@ dinoBtnMbl.addEventListener('click', () => {
 
 sniperBtnMbl.addEventListener('click', () => {
     showPage("sniper");
+});
+
+loreBtnMbl.addEventListener('click', () => {
+    window.open("https://www.britannica.com/topic/event-horizon-black-hole");
+});
+
+blueskyBtnMbl.addEventListener('click', () => {
+    window.open('https://bsky.app/profile/eventthorizon.bsky.social');
+});
+
+twitchBtnMbl.addEventListener('click', () => {
+    window.open('https://www.twitch.tv/galaxykirbyspl');
 });

@@ -307,7 +307,7 @@ body {
 
 #main-page-img {
   display: block;
-  width: clamp(350px, 40%, 600px);
+  width: clamp(260px, 60%, 600px);
   height: auto;
 
   margin-left: auto;

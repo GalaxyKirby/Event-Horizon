@@ -17,3 +17,15 @@
 
   padding: 0.5rem;
 }
+
+.cat-photo {
+  width: clamp(180px, 30%, 280px);
+  height: auto;
+
+  border-radius: 15px;
+  border: solid 2px var(--washed-purple);
+
+  margin: 0.5rem;
+
+  margin-top: -1rem;
+}
