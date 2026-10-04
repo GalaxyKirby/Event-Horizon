@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://GalaxyKirby.github.io/Event-Horizon/",
+  "homepage": "https://GalaxyKirby.github.io/Event-Horizon/Event-Horizon-Site/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
