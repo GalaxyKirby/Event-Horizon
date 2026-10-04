@@ -25,7 +25,7 @@ const sniperBtn = document.getElementById('sniper-btn');
 
 const loreBtn = document.getElementById('lore-btn');
 const blueskyBtn = document.getElementById('bluesky-btn');
-const twitchBtn = document.getElementById('bluesky-btn');
+const twitchBtn = document.getElementById('twitch-btn');
 
 //Mobile Btns
 const homeBtnMbl = document.getElementById('home-btn-mbl');
