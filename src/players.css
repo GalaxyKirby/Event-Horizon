@@ -1,11 +1,47 @@
-.player-title {
-    color: lightskyblue;
+.player-subtitle {
+    color: var(--washed-purple);
     font-weight: bold;
+    font-style: italic;
+
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .player-card-info {
     background-color: var(--dark-purple);
+    width: 100%;
 }
+
+.player-name-row {
+    display: flex;
+}
+
+.player-socials-row {
+    display: flex;
+    flex-direction: row;
+
+    column-gap: 0.8rem;
+
+    margin-left: 0.3rem;
+}
+
+.player-socials-item {
+    display: flex;
+    position: relative;
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.player-socials-item:hover:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(245, 230, 99, 0.700);
+    cursor: pointer;
+}
+
 
 .player-pfp {
     width: clamp(90px, 15%, 135px);
@@ -20,7 +56,14 @@
 
 .weapon-photo {
     width: clamp(50px, 5vw, 60px);
-    height: auto;
+    height: clamp(50px, 5vw, 60px);
 
     margin: 0.7rem;
+}
+
+.socials-photo {
+    width: 30px;
+    height: 30px;
+
+    margin: 0.3rem;
 }
