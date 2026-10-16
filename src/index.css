@@ -58,6 +58,17 @@ body {
   margin: auto;
 }
 
+#home-btn:hover {
+  cursor: pointer;
+  border: solid 2px var(--light-yellow);
+}
+
+#home-btn-mbl:hover {
+  cursor: pointer;
+  border: solid 2px var(--light-yellow);
+}
+
+
 /* Navbar Global */
 .logo-card {
   width: fit-content;

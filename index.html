@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/Event-Horizon-Logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/Event_Horizon_Logo.svg" />
     <link rel="stylesheet" href="./src/global.css" />
     <link rel="stylesheet" href="./src/index.css" />
     <link rel="stylesheet" href="./src/players.css" />
@@ -16,13 +16,13 @@
         <div id="content-container">
           <!-- Desktop Navbar -->
           <div id="navbar-desktop">
-            <div class="logo-card">
+            <div id="home-btn" class="logo-card">
               <img class="logo-img" width="65" height="65" src="./src/assets/Event_Horizon_Logo.png"/>
               <h4 class="logo-title">Event Horizon</h4>
             </div>
             <br />
             <div id="desktop-nav-container">
-              <btn id="home-btn" class="desktop-nav-btn">➲ Home</btn>
+              <btn id="sendou-btn" class="desktop-nav-btn">➲ Sendou</btn>
               <div id="players-desktop-nav">
                 <btn id="players-btn" class="desktop-nav-btn">➲ Players</btn>
                 <div id="players-desktop-list">
@@ -41,12 +41,12 @@
           </div>
           <!-- Mobile Navbar -->
           <div id="navbar-mobile">
-            <div class="logo-card-mobile">
+            <div id="home-btn-mbl" class="logo-card-mobile">
                 <img class="logo-img" width="50" height="50" src="./src/assets/Event_Horizon_Logo.png"/>
                 <h4 class="logo-title">Event Horizon</h4>
             </div>
             <div id="mobile-nav-container">
-              <btn id="home-btn-mbl" class="mobile-nav-btn">➲ Home</btn>
+              <btn id="sendou-btn-mbl" class="mobile-nav-btn">➲ Sendou</btn>
               <btn id="dropdown-btn" class="mobile-nav-btn">➲ Players</btn>
               <btn id="lore-btn-mbl" class="mobile-nav-btn">➲ Lore</btn>
               <btn id="bluesky-btn-mbl" class="mobile-nav-btn">➲ Bluesky</btn>
@@ -66,16 +66,11 @@
             <img id="main-page-img" src="./src/assets/Event_Horizon_Banner_Updated.png" />
             <div class="text-container">
               <h5 class="title">Welcome To The Event Horizon</h5>
-              <br />
-              <p class="content">Hello traveler! 
-                  Event Horizon is a competitive Splatoon 3 team
-                  that was formed in 2024, with the captain and co-captain having met in 2022.
-                  Our main focus as a team is an even split between being friends and improving at the game.
-                  Plenty of game nights mixed in with our practices!  
+              <p class="content">
+                  Event Horizon is a long running competitive Splatoon 3 team with an aim of pushing our skills into high level play and being an inspirational example of what a long-running team can be. The team was created in 2023, being a culmination of players from a variety of old low level teams. The name “Event Horizon” didn’t have too complex of backstory; funnily enough, it was decided off of a poll of cool sounding space related names that some of our space enthusiasts thought up.
                   <br />
                   <br />
-                  Our gamplay is specialized in coordination, picking a lot of weapons with supernova sized hitboxes 
-                  that combo with each other and deny space. Win or lose, we take every set as a learning experience and have a current goal of someday pushing into high level play.
+                  The team specializes in what could best be described as an “AOE Dive”, taking fights with weapons that have large hitboxes while also being *just* fast enough to fend for themselves against the evil .52 Gals of the world. The strategy is a bit unorthodox; however, we have always believed in everyone on the team winning with what they enjoy the most. We're always looking for new oppurtunities to improve! We take every game, no matter the result, as a new learning experience.  
               </p>
             </div>
           </div>
@@ -93,6 +88,10 @@
                     <p class="content player-subtitle">He/She</p>
                   </div>
                   <div class="player-socials-row">
+                    <div class="player-socials-item" onclick="window.open('')">
+                      <img class="socials-photo" src="./src/assets/twitch-logo.png" />
+                      <p class="content player-subtitle">Twitch</p>
+                    </div>
                     <div class="player-socials-item" onclick="window.open('');">
                       <img class="socials-photo" src="./src/assets/site-bluesky-logo.png" />
                       <p class="content player-subtitle">Bluesky</p>
@@ -108,10 +107,16 @@
                   "The best way I can describe Blaster mains is if you hand a gorilla a Pro Controller and say 'If you win at Splatoon, I will give you a banana'. The gorilla does not care about being seen as talented or any sort of glory, the gorilla just wants to win at Splatoon"
                   <br />
                   <br />
-                  A longtime Smash player turned into a Splatoon person. One of the few remaining S-Blast players that hasn't converted to the Sensor + Splashdown cult. 
-                  Resident furry software developer (I made this site! :3) that loves rambling about video games.  
+                  A longtime e-sports competitior that has happily settled down in Splatoon 3. While they don't quite play it too much anymore, Galaxy used to travel across the U.S. East Coast competing in Super Smash Bros. Ultimate tournaments.
+                  They use their long history of competing in other games to guide both themselves and their teammates with knowledge on staying focused and keeping spirits high in brackets.
+                  <br />
+                  Galaxy is also the resident required 'gay furry' each Splatoon team must have. In addition, they work in software development and spend a bunch of time practicing their skills (Maintains this website too!). While they may not be the sharpest tool in the shed, they keep the vibes positive and do their Blaster things!
+                  <br />
+                  <br />  
+                  <span style="font-style: italic; color: lightblue;">They Mod Controllers A Ton, Here's The Latest:</span>
                 </p>
               </div>
+              <img class="cat-photo" src="/src/assets/Modded-Pro-Con.jpg" />
             </div>
             <!-- Waffle -->
             <div id="waffle-player" class="page-content">
@@ -143,8 +148,12 @@
                   <br />
                   Resident sword one-trick (except for when I pick dynamo and sometimes recycle). 
                   Been playing splatoon since the first game and competitive since 2023. Currently a student and wishes to go to more LANS but cannot due to aforementioned studentry.
+                  <br />
+                  <br />
+                  <span style="font-style: italic; color: lightblue;">"Do YOU Have a Toni Kensa Water Bottle?":</span>
                   </p>
               </div>
+              <img class="cat-photo" src="/src/assets/Toni-Kensa-Water.jpg"/>
             </div>
             <!-- Duck -->
             <div id="duck-player" class="page-content">
@@ -176,7 +185,11 @@
                   Autistic about Splatoon since 2015 and started playing comp in 2018. 
                   Can't decide between aggro and support,
                   but Dread Wringer is the best of both worlds. May actually be 3 ducks in a trench coat???
+                  <br />
+                  <br />
+                  <span style="font-style: italic; color: lightblue;">Duck's Canonical Family:</span>
                 </p>
+                <img class="cat-photo" src="/src/assets/Duck-Ducks.jpg" />
               </div>
             </div>
             <!-- Din0 -->
@@ -191,6 +204,10 @@
                     <p class="content player-subtitle">He/Him</p>
                   </div>
                   <div class="player-socials-row">
+                    <div class="player-socials-item" onclick="window.open('')">
+                      <img class="socials-photo" src="./src/assets/twitch-logo.png" />
+                      <p class="content player-subtitle">Twitch</p>
+                    </div>
                     <div class="player-socials-item" onclick="window.open('');">
                       <img class="socials-photo" src="./src/assets/site-bluesky-logo.png" />
                       <p class="content player-subtitle">Bluesky</p>
@@ -202,7 +219,6 @@
                   </div>
                 </div>
                 <h5 class="title">About</h5>
-                <h5 class="title">About</h5>
                 <p class="content">
                     "Gay gay homosexual gay"
                     <br />
@@ -212,9 +228,9 @@
                     I like Splatoon (cause I'm gay) I've been here since 2020 and I'm still not LI banned (yet). Also I commentate and make art.
                     <br />
                     <br />
-                    <span style="font-style: italic;">Very Important Cat Photo:</span>
+                    <span style="font-style: italic; color: lightblue;">Very Important Cat Photo:</span>
                 </p>
-                <img class="cat-photo" src="./src/assets/Dino-Cat.jpg">
+                <img class="cat-photo" src="./src/assets/Dino-Cat.jpg" />
               </div>
             </div>
             <!-- Sniper -->
@@ -247,7 +263,7 @@
                   Eternally suffering barista by day and gamer by night. I like liter and cats.
                   <br />
                   <br />
-                  <span style="font-style: italic;">Juni (Not Suffering):</span>
+                  <span style="font-style: italic; color: lightblue;">Juni (Not Suffering):</span>
               </div>
               <img class="cat-photo" src="./src/assets/Sniper-Cat.jpg" />
               </div>

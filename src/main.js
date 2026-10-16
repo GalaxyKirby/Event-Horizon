@@ -16,6 +16,7 @@ let desktopNav = document.getElementById('navbar-desktop');
 let mobileNav = document.getElementById('navbar-mobile');
 
 //Buttons
+const sendouBtn = document.getElementById('sendou-btn');
 const homeBtn = document.getElementById('home-btn');
 const galaxyBtn = document.getElementById('galaxy-btn');
 const waffleBtn = document.getElementById('waffle-btn');
@@ -28,6 +29,7 @@ const blueskyBtn = document.getElementById('bluesky-btn');
 const twitchBtn = document.getElementById('twitch-btn');
 
 //Mobile Btns
+const sendouBtnMbl = document.getElementById('sendou-btn-mbl');
 const homeBtnMbl = document.getElementById('home-btn-mbl');
 const galaxyBtnMbl = document.getElementById('galaxy-btn-mbl');
 const waffleBtnMbl = document.getElementById('waffle-btn-mbl');
@@ -58,7 +60,7 @@ function showPage(name) {
     pages[name].style.display = "block";
 
     
-    localStorage.setItem(NAV_STATE, name);
+    sessionStorage.setItem(NAV_STATE, name);
 }
 
 function positionDropdown(button, dropdown) {
@@ -72,7 +74,7 @@ function positionDropdown(button, dropdown) {
 //On Page Open Set State
 document.addEventListener('DOMContentLoaded', () => {
 
-    showPage(localStorage.getItem(NAV_STATE));
+    showPage(sessionStorage.getItem(NAV_STATE));    
 
     dropdown.style.display = "none";
 });
@@ -94,6 +96,10 @@ document.addEventListener('click', () => {
 
 //= Buttons
 //Btn Nav Desktop
+sendouBtn.addEventListener('click', () => {
+    window.open("https://sendou.ink/t/event-horizon");
+});
+
 homeBtn.addEventListener('click', () => {
     showPage("home");
 });
@@ -123,14 +129,18 @@ loreBtn.addEventListener('click', () => {
 });
 
 blueskyBtn.addEventListener('click', () => {
-    window.open('https://bsky.app/profile/eventthorizon.bsky.social');
+    window.open("https://bsky.app/profile/eventthorizon.bsky.social");
 });
 
 twitchBtn.addEventListener('click', () => {
-    window.open('https://www.twitch.tv/galaxykirbyspl');
+    window.open("https://www.twitch.tv/galaxykirbyspl");
 });
 
 //Btn Nav Mobile
+sendouBtnMbl.addEventListener('click', () => {
+    window.open("https://sendou.ink/t/event-horizon");
+});
+
 homeBtnMbl.addEventListener('click', () => {
     showPage("home");
 });
@@ -160,9 +170,9 @@ loreBtnMbl.addEventListener('click', () => {
 });
 
 blueskyBtnMbl.addEventListener('click', () => {
-    window.open('https://bsky.app/profile/eventthorizon.bsky.social');
+    window.open("https://bsky.app/profile/eventthorizon.bsky.social");
 });
 
 twitchBtnMbl.addEventListener('click', () => {
-    window.open('https://www.twitch.tv/galaxykirbyspl');
+    window.open("https://www.twitch.tv/galaxykirbyspl");
 });
