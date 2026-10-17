@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/Event-Horizon-Logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/Event_Horizon_Logo-Bz7HxT3V.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Event Horizon</title>
-    <script type="module" crossorigin src="/assets/index-zUP6J188.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Cg7PMQsv.css">
+    <script type="module" crossorigin src="/assets/index-DSnSQImX.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-COIaPr7S.css">
   </head>
   <body>
     <div id="outer-container">
@@ -15,13 +15,13 @@
         <div id="content-container">
           <!-- Desktop Navbar -->
           <div id="navbar-desktop">
-            <div class="logo-card">
+            <div id="home-btn" class="logo-card">
               <img class="logo-img" width="65" height="65" src="/assets/Event_Horizon_Logo-DVa-vYqq.png"/>
               <h4 class="logo-title">Event Horizon</h4>
             </div>
             <br />
             <div id="desktop-nav-container">
-              <btn id="home-btn" class="desktop-nav-btn">➲ Home</btn>
+              <btn id="sendou-btn" class="desktop-nav-btn">➲ Sendou</btn>
               <div id="players-desktop-nav">
                 <btn id="players-btn" class="desktop-nav-btn">➲ Players</btn>
                 <div id="players-desktop-list">
@@ -40,12 +40,12 @@
           </div>
           <!-- Mobile Navbar -->
           <div id="navbar-mobile">
-            <div class="logo-card-mobile">
+            <div id="home-btn-mbl" class="logo-card-mobile">
                 <img class="logo-img" width="50" height="50" src="/assets/Event_Horizon_Logo-DVa-vYqq.png"/>
                 <h4 class="logo-title">Event Horizon</h4>
             </div>
             <div id="mobile-nav-container">
-              <btn id="home-btn-mbl" class="mobile-nav-btn">➲ Home</btn>
+              <btn id="sendou-btn-mbl" class="mobile-nav-btn">➲ Sendou</btn>
               <btn id="dropdown-btn" class="mobile-nav-btn">➲ Players</btn>
               <btn id="lore-btn-mbl" class="mobile-nav-btn">➲ Lore</btn>
               <btn id="bluesky-btn-mbl" class="mobile-nav-btn">➲ Bluesky</btn>
@@ -65,127 +65,217 @@
             <img id="main-page-img" src="/assets/Event_Horizon_Banner_Updated-CcufTJZ9.png" />
             <div class="text-container">
               <h5 class="title">Welcome To The Event Horizon</h5>
-              <br />
-              <p class="content">Hello traveler! 
-                  Event Horizon is a competitive Splatoon 3 team
-                  that was formed in 2024, with the captain and co-captain having met in 2022.
-                  Our main focus as a team is an even split between being friends and improving at the game.
-                  Plenty of game nights mixed in with our practices!  
+              <p class="content">
+                  Event Horizon is a long running competitive Splatoon 3 team with an aim of pushing our skills into high level play and being an inspirational example of what a long-running team can be. The team was created in 2023, being a culmination of players from a variety of old low level teams. The name “Event Horizon” didn’t have too complex of backstory; funnily enough, it was decided off of a poll of cool sounding space related names that some of our space enthusiasts thought up.
                   <br />
                   <br />
-                  Our gamplay is specialized in coordination, picking a lot of weapons with supernova sized hitboxes 
-                  that combo with each other and deny space. Win or lose, we take every set as a learning experience and have a current goal of someday pushing into high level play.
+                  The team specializes in what could best be described as an “AOE Dive”, taking fights with weapons that have large hitboxes while also being *just* fast enough to fend for themselves against the evil .52 Gals of the world. The strategy is a bit unorthodox; however, we have always believed in everyone on the team winning with what they enjoy the most. We're always looking for new oppurtunities to improve! We take every game, no matter the result, as a new learning experience.  
               </p>
             </div>
           </div>
           <!-- Players -->
             <!-- Galaxy -->
             <div id="galaxy-player" class="page-content">
-              <div class="player-card">
+                <div class="player-card">
                 <div class="player-card-info">
-                <img class="player-pfp" src="/assets/Chai_PFP-BKz4iHat.png" />
-                  <h3 class="title">GalaxyKirby</h3>
+                  <img class="player-pfp" src="/assets/Chai_PFP-BKz4iHat.png" />
                   <img class="weapon-photo" src="/assets/S3_Badge_S-BLAST_91_7-DMTGJAEV.png"/>
-                  <p class="content" style="margin: 0; font-weight: bold;">He/She</p>
-                  <p class="content" style="font-weight: bold;">Captain</p>
+                  <img class="weapon-photo" src="/assets/S3_Badge_Custom_Blaster_4-DnrgfbaS.png"/>
+                  <img class="weapon-photo" src="/assets/S3_Badge_.52_Gal_4-B3CvyWY2.png"/>
+                  <div class="player-name-row">
+                    <h3 class="title">Galaxy</h3>
+                    <p class="content player-subtitle">He/She</p>
+                  </div>
+                  <div class="player-socials-row">
+                    <div class="player-socials-item" onclick="window.open('https://www.twitch.tv/galaxykirbyspl')">
+                      <img class="socials-photo" src="/assets/twitch-logo-CRem_E3G.png" />
+                      <p class="content player-subtitle">Twitch</p>
+                    </div>
+                    <div class="player-socials-item" onclick="window.open('https://bsky.app/profile/galaxykirby.bsky.social');">
+                      <img class="socials-photo" src="/assets/site-bluesky-logo-D3Ygmqh0.png" />
+                      <p class="content player-subtitle">Bluesky</p>
+                    </div>
+                    <div class="player-socials-item" onclick="window.open('https://sendou.ink/u/galaxy-kirby');">
+                      <img class="socials-photo" src="/assets/squid-icon-BDgFbpru.png" />
+                      <p class="content player-subtitle">Sendou</p>
+                    </div>
+                  </div>
                 </div>
                 <h5 class="title">About</h5>
                 <p class="content">
                   "The best way I can describe Blaster mains is if you hand a gorilla a Pro Controller and say 'If you win at Splatoon, I will give you a banana'. The gorilla does not care about being seen as talented or any sort of glory, the gorilla just wants to win at Splatoon"
                   <br />
                   <br />
-                  A longtime Smash player turned into a Splatoon person. One of the few remaining S-Blast players that hasn't converted to the Sensor + Splashdown cult. 
-                  Resident furry software developer (I made this site! :3) that loves rambling about video games.  
+                  A longtime e-sports competitor that has happily settled down in Splatoon 3. Galaxy used to travel across the U.S. East Coast competing in Super Smash Bros. Ultimate tournaments, but has since replaced that game's space with Splatoon.
+                  They use their long history of competing in other games to guide both themselves and their teammates with knowledge on staying focused and keeping spirits high in brackets.
+                  <br />
+                  Galaxy is also the resident required 'gay furry' each Splatoon team must have. In addition, they work in software development and spend a bunch of time practicing their skills (Maintains this website too!). While they may not be the sharpest tool in the shed, they keep the vibes positive and do their Blaster things!
+                  <br />
+                  <br />  
+                  <span style="font-style: italic; color: lightblue;">They Mod Controllers A Ton, Here's The Latest:</span>
                 </p>
               </div>
+              <img class="cat-photo" src="/assets/Modded-Pro-Con-BGT71EZN.jpg" />
             </div>
             <!-- Waffle -->
             <div id="waffle-player" class="page-content">
                 <div class="player-card">
                 <div class="player-card-info">
-                <img class="player-pfp" src="/assets/Waffle_PFP-CblK0rLK.png" />
-                  <h3 class="title">Waffle</h3>
+                  <img class="player-pfp" src="/assets/Waffle_PFP-CblK0rLK.png" />
                   <img class="weapon-photo" src="/assets/S3_Badge_Mint_Decavitator_7-DVVFa5GU.png"/>
-                  <p class="content" style="margin: 0; font-weight: bold;">She/Her</p>
-                  <p class="content" style="font-weight: bold;">Co-Captain</p>
+                  <img class="weapon-photo" src="/assets/S3_Badge_Recycled_Brella_24_Mk_I_4-D2ZNjfrn.png"/>
+                  <img class="weapon-photo" src="/assets/S3_Badge_Splatana_Stamper_4-BuXLXKgu.png"/>
+                  <div class="player-name-row">
+                    <h3 class="title">Waffle</h3>
+                    <p class="content player-subtitle">She/Her</p>
+                  </div>
+                  <div class="player-socials-row">
+                    <div class="player-socials-item" onclick="window.open('https://bsky.app/profile/waffle-spl.bsky.social');">
+                      <img class="socials-photo" src="/assets/site-bluesky-logo-D3Ygmqh0.png" />
+                      <p class="content player-subtitle">Bluesky</p>
+                    </div>
+                    <div class="player-socials-item" onclick="window.open('https://sendou.ink/u/waffle');">
+                      <img class="socials-photo" src="/assets/squid-icon-BDgFbpru.png" />
+                      <p class="content player-subtitle">Sendou</p>
+                    </div>
+                  </div>
                 </div>
                 <h5 class="title">About</h5>
                 <p class="content">
-                  "decavitator is a portmanteau of decapitate and cavity"
+                  "Decavitator is a portmanteau of decapitate and cavity"
                   <br />
                   <br />
-                  Resident sword one-trick (except for when I pick dynamo and sometimes recycle). 
-                  Been playing splatoon since the first game and competitive since 2023. Currently a student and wishes to go to more LANS but cannot due to aforementioned studentry.
+                  Resident sword “one-trick” that picks Dynamo and Recycle enough that the label “one-trick” is questionable. She has been playing competitive since 2023 and was one of Galaxy’s first teammates. Waffle is an engineering student with lots of passion for science as well, she’ll often talk about topics that the author of this site could only fathom to understand. A lot of her inquisitive nature often rubs off into Splatoon as well, with Waffle often being the one to incite VOD reviews or make great points about areas we can improve on. If she isn’t talking about Splatoon, she’ll instead be talking about how awesome the indie game Celeste is and would probably tell you to play it RIGHT NOW!
+                  <br />
+                  <br />
+                  <span style="font-style: italic; color: lightblue;">"Do YOU Have a Toni Kensa Water Bottle?":</span>
                   </p>
               </div>
+              <img class="cat-photo" src="/assets/Toni-Kensa-Water-yIr4tAzY.jpg"/>
             </div>
             <!-- Duck -->
             <div id="duck-player" class="page-content">
-              <div class="player-card">
-              <div class="player-card-info">
-              <img class="player-pfp" src="/assets/Duck_PFP-W8TgO6Fm.png" />
-                <h3 class="title">Duck</h3>
-                <img class="weapon-photo" src="/assets/S3_Badge_Dread_Wringer_6-w905yI4i.png"/>
-                <p class="content" style="margin: 0; font-weight: bold;">He/Him</p>
-                <p class="content" style="font-weight: bold;">Support? Slayer? Flip a coin</p>
-              </div>
-              <h5 class="title">About</h5>
-              <p class="content">
-                  "Gamer, Mathematician, and Musician."
+                <div class="player-card">
+                <div class="player-card-info">
+                  <img class="player-pfp" src="/assets/Duck_PFP-W8TgO6Fm.png" />
+                  <img class="weapon-photo" src="/assets/S3_Badge_Dread_Wringer_6-w905yI4i.png"/>
+                  <img class="weapon-photo" src="/assets/S3_Badge_Hornz_Dread_Wringer_4-DXNNDPKE.png"/>
+                  <div class="player-name-row">
+                    <h3 class="title">Duck</h3>
+                    <p class="content player-subtitle">He/Him</p>
+                  </div>
+                  <div class="player-socials-row">
+                    <div class="player-socials-item" onclick="window.open('https://bsky.app/profile/clarinetduck.bsky.social');">
+                      <img class="socials-photo" src="/assets/site-bluesky-logo-D3Ygmqh0.png" />
+                      <p class="content player-subtitle">Bluesky</p>
+                    </div>
+                    <div class="player-socials-item" onclick="window.open('https://sendou.ink/u/clarinet_duck');">
+                      <img class="socials-photo" src="/assets/squid-icon-BDgFbpru.png" />
+                      <p class="content player-subtitle">Sendou</p>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="title">About</h5>
+                <p class="content">
+                  "We just reenacted the French revolution in one turn of Mario Party"
                   <br />
                   <br />
-                  Autistic about Splatoon since 2015 and started playing comp in 2018. 
-                  Can't decide between aggro and support,
-                  but Dread Wringer is the best of both worlds. May actually be 3 ducks in a trench coat???
-              </p>
+                  A gamer, musician, and mathematician that’s been autistic about Splatoon since 2015 and started playing comp in 2018. 
+                  He cannot for the life of him decide between aggro and support; however, Dread Wringer and Dynamo have been found to be the best of both worlds. 
+                  When he’s not playing comp Splatoon in handheld mode, Duck is playing for a band that has concerts completely made up of their own renditions of video game tracks. 
+                  Duck was recruited to Event Horizon after being a teammate for a large Splatoon LAN with Galaxy and since then has been a great teammate and friend. 
+                  Legends say that he is not a human, but 3 ducks in a trench coat. (P.S. | Do not play Mario Party with this guy, he is evil)
+                  <br />
+                  <br />
+                  <span style="font-style: italic; color: lightblue;">Duck's Canonical Family:</span>
+                </p>
+                <img class="cat-photo" src="/assets/Duck-Ducks-Cltnezw9.jpg" />
               </div>
             </div>
             <!-- Din0 -->
             <div id="din0-player" class="page-content">
-              <div class="player-card">
-              <div class="player-card-info">
-              <img class="player-pfp" src="/assets/Dino_PFP-uYUCYxZ0.png" />
-                <h3 class="title">Din0</h5>
-                <img class="weapon-photo" src="/assets/S3_Badge_Custom_Explosher_8-BWELvin-.png"/>
-                <p class="content" style="margin: 0; font-weight: bold;">He/Him</p>
-                <p class="content" style="font-weight: bold;">"Backline"</p>
-              </div>
-              <h5 class="title">About</h5>
-              <p class="content">
-                  "Gay gay homosexual gay"
-                  <br />
-                  <br />
-                  Explosher extraordinaire and homosexual disaster. 
-                  I love cats let me show you my cats pretty please. 
-                  I like Splatoon (cause I'm gay) I've been here since 2020 and I'm still not LI banned (yet). Also I commentate and make art.
-                  <br />
-                  <br />
-                  <span style="font-style: italic;">Very Important Cat Photo:</span>
-              </p>
-              <img class="cat-photo" src="/assets/Dino-Cat-BFXQif7S.jpg">
+                <div class="player-card">
+                <div class="player-card-info">
+                  <img class="player-pfp" src="/assets/Dino_PFP-uYUCYxZ0.png" />
+                  <img class="weapon-photo" src="/assets/S3_Badge_Custom_Explosher_8-BWELvin-.png"/>
+                  <img class="weapon-photo" src="/assets/64px-S3_Badge_Bulbz_Tri-Stringer_4-BmDNTkEf.png"/>
+                  <div class="player-name-row">
+                    <h3 class="title">Din0</h3>
+                    <p class="content player-subtitle">He/Him</p>
+                  </div>
+                  <div class="player-socials-row">
+                    <div class="player-socials-item" onclick="window.open('https://www.twitch.tv/notdin0_')">
+                      <img class="socials-photo" src="/assets/twitch-logo-CRem_E3G.png" />
+                      <p class="content player-subtitle">Twitch</p>
+                    </div>
+                    <div class="player-socials-item" onclick="window.open('https://bsky.app/profile/notdin0.bsky.social');">
+                      <img class="socials-photo" src="/assets/site-bluesky-logo-D3Ygmqh0.png" />
+                      <p class="content player-subtitle">Bluesky</p>
+                    </div>
+                    <div class="player-socials-item" onclick="window.open('https://sendou.ink/u/473981414799572992');">
+                      <img class="socials-photo" src="/assets/squid-icon-BDgFbpru.png" />
+                      <p class="content player-subtitle">Sendou</p>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="title">About</h5>
+                <p class="content">
+                    "Gay gay homosexual gay"
+                    <br />
+                    <br />
+                    The Explosher extraordinaire and homosexual disaster himself—and also a college student. 
+                    The fakest anchor that has ever anchored, his Explo WILL chase you. 
+                    He has been a huge fan of the Splatoon series since 2020 (because he’s gay). 
+                    In addition to being a competitive player, Din0 sometimes commentates events as well. 
+                    Outside of Splatoon, he makes art and loves cats. He will not be afraid to send as many cats as possible. 
+                    Din0 is the newest member of the team, joining in early 2026. 
+                    (If I had a nickel for every person on Event Horizon who was an artist obsessed with cats, I’d have two, and while it’s not very many it’s funny that it happened twice.)
+                    <br />
+                    <br />
+                    <span style="font-style: italic; color: lightblue;">Very Important Cat Photo:</span>
+                </p>
+                <img class="cat-photo" src="/assets/Dino-Cat-BFXQif7S.jpg" />
               </div>
             </div>
             <!-- Sniper -->
             <div id="sniper-player" class="page-content">
-              <div class="player-card">
-              <div class="player-card-info">
-              <img class="player-pfp" src="/assets/Sniper_PFP-pRf2fEYx.png" />
-                <h3 class="title">Sniper</h3>
-                <img class="weapon-photo" src="/assets/S3_Badge_Snipewriter_5H_4-Dqfx5Ozs.png"/>
-                <p class="content" style="margin: 0; font-weight: bold;">They/Them</p>
-                <p class="content" style="font-weight: bold;">Backline</p>
-              </div>
-              <h5 class="title">About</h5>
-              <p class="content">
-                  "I <span style="font-style: italic;">love</span> cats"
+                <div class="player-card">
+                <div class="player-card-info">
+                  <img class="player-pfp" src="/assets/Sniper_PFP-pRf2fEYx.png" />
+                  <img class="weapon-photo" src="/assets/S3_Badge_Snipewriter_5H_4-Dqfx5Ozs.png"/>
+                  <img class="weapon-photo" src="/assets/S3_Badge_E-liter_4K_4-B43BkN4Q.png"/>
+                  <div class="player-name-row">
+                    <h3 class="title">Sniper</h3>
+                    <p class="content player-subtitle">They/Them</p>
+                  </div>
+                  <div class="player-socials-row">
+                    <div class="player-socials-item" onclick="window.open('https://bsky.app/profile/snipescythe.bsky.social');">
+                      <img class="socials-photo" src="/assets/site-bluesky-logo-D3Ygmqh0.png" />
+                      <p class="content player-subtitle">Bluesky</p>
+                    </div>
+                    <div class="player-socials-item" onclick="window.open('https://sendou.ink/u/snipescythe');">
+                      <img class="socials-photo" src="/assets/squid-icon-BDgFbpru.png" />
+                      <p class="content player-subtitle">Sendou</p>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="title">About</h5>
+                <p class="content">
+                  "I <span style="font-style: italic;">love</span> cats, even more than Fire Emblem"
                   <br />
                   <br />
-                  Eternally suffering barista by day and gamer by night. I like liter and cats.
+                  The original captain of Event Horizon that has since handed the mantle to Galaxy. 
+                  An anchor player who LOVES E-Liter...maybe a little too much. 
+                  They are a barista by day and an artist by night. 
+                  They have a very strong special interest in Fire Emblem and it can be almost guaranteed that half of the art they have drawn is Fire Emblem fan-art. 
+                  If you engage with them in a conversation about the series prepare for paragraphs upon paragraphs of text. 
+                  When they aren’t serving coffee or drawing, they’re taking care of their beloved cat Juni who has tons of zoomies. 
                   <br />
                   <br />
-                  <span style="font-style: italic;">Juni (Not Suffering):</span>
+                  <span style="font-style: italic; color: lightblue;">Juni (Consuming Cat Lollipop):</span>
               </div>
               <img class="cat-photo" src="/assets/Sniper-Cat-BWEWLE_e.jpg" />
+              </div>
             </div>
         </div>
       </div>
